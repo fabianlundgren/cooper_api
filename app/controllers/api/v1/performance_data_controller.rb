@@ -14,7 +14,7 @@ class Api::V1::PerformanceDataController < ApplicationController
   def index
   @collection = current_api_v1_user.performance_data
   render json: { entries: @collection }
-end
+  end
 
   private
 
